@@ -6,7 +6,7 @@
     "accountingRule": {
       "duplicateName": "Desculpe, mas já existe uma regra contabilística com este nome."
     },
-    "error.resource.notImplemented.type": "Erro não implementado",
+    "error.resource.notImplemented.type": "Não implementado",
     "error.resource.notImplemented.message": "Funcionalidade não implementada!",
     "linkedSavingsAccountOwnership": "A conta poupança vinculada não pertence ao cliente selecionado.",
     "clientNotInGSIM": "O cliente com ID {{id}} não está presente no GSIM.",
@@ -285,7 +285,140 @@
     "validation.msg.savingsproduct.shortName.exceeds.max.length": "O nome abreviado não pode ter mais de {{params[0].value}} caracteres.",
     "validation.msg.savingsproduct.withdrawalFeeAmount.cannot.be.blank": "O valor da taxa de retirada é obrigatório.",
     "validation.msg.savingsproduct.withdrawalFeeAmount.not.zero.or.greater": "O valor da taxa de retirada deve ser maior ou igual a zero, se fornecido.",
-    "validation.msg.savingsproduct.withdrawalFeeType.is.not.one.of.expected.enumerations": "O tipo de período de taxa de retirada é obrigatório."
+    "validation.msg.savingsproduct.withdrawalFeeType.is.not.one.of.expected.enumerations": "O tipo de taxa de retirada selecionado não é válido.",
+    "http": {
+      "connection": {
+        "title": "Erro de ligação",
+        "message": "Não é possível ligar ao servidor. Verifique a sua ligação à internet."
+      },
+      "badRequest": {
+        "title": "Pedido inválido",
+        "message": "Verifique os dados introduzidos e tente novamente."
+      },
+      "unauthorized": {
+        "title": "Não autorizado",
+        "message": "A sua sessão expirou. Inicie sessão novamente.",
+        "action": "Iniciar sessão"
+      },
+      "forbidden": {
+        "title": "Acesso negado",
+        "message": "Não tem permissão para realizar esta ação."
+      },
+      "notFound": {
+        "title": "Não encontrado",
+        "message": "O recurso solicitado não foi encontrado.",
+        "contextMessage": "{{context}} não encontrado."
+      },
+      "conflict": {
+        "title": "Conflito",
+        "message": "O recurso já existe ou há um conflito."
+      },
+      "serverError": {
+        "title": "Erro do servidor",
+        "message": "Ocorreu um erro inesperado. Tente novamente mais tarde."
+      },
+      "serviceUnavailable": {
+        "title": "Serviço indisponível",
+        "message": "O serviço está temporariamente indisponível. Tente novamente mais tarde."
+      },
+      "default": {
+        "title": "Erro",
+        "message": "Ocorreu um erro inesperado."
+      }
+    },
+    "interceptor": {
+      "invalidParams": "Foram passados parâmetros inválidos no pedido!"
+    },
+    "auth": {
+      "pleaseWait": "Aguarde por favor...",
+      "startType": "Início da autenticação",
+      "twoFactor": {
+        "type": "Autenticação de dois fatores necessária",
+        "message": "Autenticação de dois fatores necessária"
+      },
+      "passwordExpired": {
+        "type": "Palavra-passe expirada",
+        "message": "A sua palavra-passe expirou, redefina a sua palavra-passe!"
+      },
+      "success": {
+        "type": "Autenticação bem-sucedida",
+        "message": "{{username}} iniciou sessão com sucesso!"
+      },
+      "passwordReset": {
+        "type": "Palavra-passe redefinida com sucesso",
+        "message": "A sua palavra-passe foi redefinida com sucesso!"
+      },
+      "callbackFailed": {
+        "type": "Autenticação falhada",
+        "message": "Não foi possível concluir a autenticação. Tente novamente."
+      },
+      "callbackError": {
+        "type": "Erro de autenticação",
+        "message": "Ocorreu um erro durante a autenticação. Tente novamente."
+      }
+    },
+    "hooks": {
+      "lastEvent": "É necessário pelo menos um evento. Não é possível eliminar o último evento."
+    },
+    "generic": {
+      "unexpected": "Ocorreu um erro. Tente novamente.",
+      "unexpectedRetry": "Ocorreu um erro inesperado. Tente novamente.",
+      "unexpectedShort": "Ocorreu um erro inesperado."
+    },
+    "holiday": {
+      "invalidDate": "Data selecionada inválida. Selecione uma data válida.",
+      "invalidRepaymentDate": "Data de reagendamento de reembolso inválida. Selecione uma data válida."
+    },
+    "report": {
+      "type": "Geração de relatório",
+      "generated": "Relatório: dados de {{reportName}} gerados",
+      "generatedNoData": "Relatório: {{reportName}} gerado sem dados"
+    },
+    "clipboard": {
+      "type": "Área de transferência",
+      "copied": "Copiado: {{value}}"
+    },
+    "tenant": {
+      "changed": {
+        "type": "Inquilino alterado"
+      }
+    },
+    "config": {
+      "setConfig": "{{type}} configuração definida"
+    },
+    "loans": {
+      "undoWriteOff": {
+        "type": "Falha ao reverter abate",
+        "message": "Ocorreu um erro ao processar a reversão do abate. Tente novamente ou contacte o suporte."
+      },
+      "alreadyAdjusted": "Montante de rendimento capitalizado já ajustado",
+      "adjustment": "Ajuste {{type}} Transação",
+      "capitalizedIncomeLimit": "O montante de ajuste de rendimento capitalizado deve ser inferior ou igual a",
+      "buyDownFeeAdjusted": "Montante da taxa Buy Down já ajustado",
+      "buyDownFeeLimit": "O montante de ajuste da taxa Buy Down deve ser inferior ou igual a",
+      "businessRule": "Regra de negócio",
+      "alertWithAmount": "{{label}}: {{amount}}"
+    },
+    "error.auth.type": "Erro de autenticação",
+    "error.auth.message": "A sua sessão expirou ou as credenciais são inválidas.",
+    "error.token.invalid.type": "Token inválido",
+    "error.token.invalid.message": "O token de uso único fornecido é inválido.",
+    "error.bad.request.type": "Pedido incorreto",
+    "error.bad.request.message": "Foram passados parâmetros inválidos no pedido!",
+    "error.unauthorized.type": "Não autorizado",
+    "error.unauthorized.message": "A sua sessão expirou ou as credenciais são inválidas.",
+    "error.resource.not.found.type": "Recurso não encontrado",
+    "error.resource.not.found.message": "O recurso solicitado não foi encontrado.",
+    "error.server.internal.type": "Erro interno do servidor",
+    "error.server.internal.message": "Ocorreu um erro inesperado no servidor. Tente novamente mais tarde.",
+    "error.unknown.type": "Erro desconhecido",
+    "error.unknown.message": "Ocorreu um erro inesperado.",
+    "validation.required": "Este campo é obrigatório",
+    "validation.minLength": "O comprimento mínimo é {{requiredLength}}",
+    "validation.emailInvalid": "Email inválido",
+    "validation.requiredField": "{{label}} é um campo obrigatório.",
+    "validation.mustBeAtLeast": "{{field}} deve ser pelo menos {{min}}",
+    "validation.mustBePositive": "{{field}} deve ser um número positivo."
   },
   "labels": {
     "Mifos Reporting Plugin for Eclipse Birt": "Mifos Reporting Plugin for Eclipse Birt",
@@ -479,6 +612,7 @@
       "Export to File": "Exportar arquivo",
       "Export CSV": "Exportar CSV",
       "Export XLS": "Exportar XLS",
+      "Export to PDF": "Exportar para PDF",
       "Export KYC": "Exportar KYC",
       "Validate Documentation": "Validar Documentação",
       "INCOMPLETE": "INCOMPLETO",
@@ -618,7 +752,8 @@
       "Retry": "Tentar novamente",
       "PRINT": "Imprimir",
       "DONE": "Concluir",
-      "Submitting": "Enviando"
+      "Submitting": "Enviando",
+      "OK": "OK"
     },
     "catalogs": {
       "Interest payment waiver": "Isenção de pagamento de juros",
@@ -889,7 +1024,8 @@
       "Working Capital": "Capital de giro",
       "DAYS": "DIAS",
       "MONTHS": "MESES",
-      "YEARS": "ANOS"
+      "YEARS": "ANOS",
+      "Loan Creation": "Criação de Empréstimo"
     },
     "commons": {
       "50 characters long": "50 caracteres",
@@ -915,7 +1051,9 @@
       "do not match": "não combina",
       "does not match": "não corresponde",
       "greater equal to than 0": "maior igual a 0",
+      "higher than allowed": "superior ao permitido",
       "invalid": "inválido",
+      "Invalid amount format": "Formato de valor inválido",
       "is": "é",
       "Is": "É",
       "is required": "é necessário",
@@ -935,10 +1073,11 @@
       "on": "sobre",
       "every": "cada",
       "Password validation": "A senha deve conter no mínimo {{minchar}} caracteres, que deve conter 1 letra maiúscula, minúscula e caractere especial e não deve consistir em caracteres repetidos ou espaços em branco",
+      "Must be a positive integer": "Deve ser um número inteiro positivo",
       "Must be at least": "Deve ser pelo menos",
       "Must be less or equal to": "Deve ser menor ou igual a",
       "must be after or equal to start date": "deve ser posterior ou igual à data de início",
-      "No classification data available": "Nenhum dado de classificação disponível",
+      "No classification data available": "Nenhum dado de classificação encontrada",
       "No": "Não",
       "Yes": "Sim"
     },
@@ -995,6 +1134,7 @@
       "Beneficiary": "Beneficiário",
       "Beneficiary Selection": "Seleção de Beneficiário",
       "Block Savings Account": "Bloquear conta poupança",
+      "Breach Configuration": "Configuração de violação",
       "Bulk Import": "Importação em massa",
       "Bulk Loan Reassignment": "Reatribuição de empréstimo em massa",
       "Business Rule Parameters": "Parâmetros de regras de negócios",
@@ -1554,6 +1694,7 @@
       "Beneficiary": "Beneficiário",
       "Branch": "Filial",
       "Branch Office": "Filial",
+      "Breach": "Violação",
       "Breakdown": "Discriminação",
       "Boolean": "boleano",
       "Business Date": "Data Comercial",
@@ -1763,6 +1904,8 @@
       "Delinquency Bucket": "Balde de inadimplência",
       "Delinquency Classification": "Classificação de Inadimplência",
       "Delinquency Payment Rule": "Regra de pagamento de inadimplência",
+      "Delinquency Grace Days": "Dias de Tolerância para Delinquência",
+      "Delinquency Start Type": "Tipo de início de inadimplência",
       "Delinquency Tags": "Tags de inadimplência",
       "Delinquent Days": "Dias de Inadimplência",
       "Delivery Method": "Método de Entrega",
@@ -1798,6 +1941,7 @@
       "Disbursement On": "Desembolso ativado",
       "Disbursement on": "Desembolso em",
       "Discount": "Desconto",
+      "Discount must be greater than or equal to 0": "O desconto deve ser maior ou igual a 0",
       "Display Name": "Nome de exibição",
       "Dividend Amount": "Valor do Dividendo",
       "Dividend Period End Date": "Data de término do período de dividendos",
@@ -1831,6 +1975,7 @@
       "Enable Down Payment": "Ativar adiantamento",
       "Enable Lock-in Period": "Ativar período de bloqueio",
       "Enable Multiple Disbursals": "Habilitar múltiplos desembolsos",
+      "Enable Near Breach": "Ativar violação próxima",
       "Enabled": "Habilitado",
       "End Date": "Data final",
       "End Point": "Ponto final",
@@ -2221,6 +2366,9 @@
       "Name": "Nome",
       "Name Decorated": "Nome Decorado",
       "Name of the Organization": "Nome da Organização",
+      "Near Breach Evaluation Frequency": "Frequência de avaliação de violação próxima",
+      "Near Breach Evaluation Frequency Type": "Tipo de frequência de avaliação de violação próxima",
+      "Near Breach Threshold": "Limiar de violação próxima",
       "Net Cash": "Caixa líquido",
       "New Interest Rate": "Nova taxa de juros",
       "Next Meeting Date": "Data da próxima reunião",
@@ -2242,6 +2390,7 @@
       "Not Available": "Não disponível",
       "Not Provided": "Não fornecido",
       "Note": "Observação",
+      "Note is too long": "A nota é demasiado longa",
       "Notes": "Notas",
       "Notes/Comments": "Notas/Comentários",
       "Notification": "Notificação",
@@ -2255,6 +2404,7 @@
       "Number of Active Overdue Group Loans": "Número de empréstimos ativos do grupo vencidos",
       "Number of Centers": "Número de Centros",
       "Number of Clients": "Número de clientes",
+      "Please enter a valid number": "Por favor, introduza um número válido",
       "Number of Collaterals": "Número de garantias",
       "Number of Days to Dormant sub-status": "Número de dias até o substatus inativo",
       "Number of Days to Escheat": "Número de dias para escapar",
@@ -2973,6 +3123,7 @@
       "Withdrawal": "Cancelamento",
       "Withdrawn by Client": "Retirado pelo cliente",
       "Write Off": "Eliminar",
+      "Update discount": "Atualizar desconto",
       "Apply Additional Shares": "Aplicar Adicional",
       "Redeem Shares": "Resgatar Ações",
       "Approve Additional Shares": "Aprovar ações adicionais",
@@ -3040,7 +3191,7 @@
     },
     "text": {
       "Loading data": "Carregando dados",
-      "No repayment schedule available": "Nenhum cronograma de reembolso disponível",
+      "No repayment schedule available": "Nenhum cronograma de reembolso encontrada",
       "About Us": "Sobre Nós",
       "A": "A",
       "withoutCategory": "Sem categoria",
@@ -3177,6 +3328,8 @@
       "Create Journal Entry": "Criar lançamento contábil manual",
       "Create Loan Product": "Criar produto de empréstimo",
       "Create Loan Originator": "Criar Agente de Crédito",
+      "View Loan Originator": "Ver Originador de Empréstimo",
+      "Edit Loan Originator": "Editar Originador de Empréstimo",
       "Create Loans Account": "Criar conta de empréstimos",
       "Create New GL Account": "Esta opção permite criar novas contas contábeis.",
       "Create Office": "Criar escritório",
@@ -3239,6 +3392,7 @@
       "Define Tax Groups": "Definir grupos fiscais",
       "Define Tax components": "Definir componentes fiscais",
       "Define Tax components and Tax groups": "Definir componentes fiscais e grupos fiscais",
+      "Define breaches for working capital products": "Definir violações para produtos de capital de giro",
       "Define charges/penalties for loan products, savings and deposit products": "Definir encargos/penalidades para produtos de empréstimo, poupança e produtos de depósito",
       "Define collaterals for Collateral Management": "Definir garantias para gerenciamento de garantias",
       "Define delinquency bucket as set of ranges": "Definir intervalo de inadimplência como um conjunto de intervalos",
@@ -3337,6 +3491,7 @@
       "Fixed Deposit Account Interest Rate Chart": "Gráfico de taxas de juros de contas de depósito fixo",
       "Fixed Deposit Account Standing Instructions": "Instruções permanentes da conta de depósito fixo",
       "Fixed Deposit Account Transactions": "Transações de conta de depósito fixo",
+      "Fixed Deposit Account Details": "Detalhes da conta de depósito a prazo",
       "Fixed Deposit Account View": "Visualização de conta de depósito fixo",
       "Fixed Deposit Products": "Produtos de Depósito Fixo",
       "Fixed Deposit Products defines the rules, default settings": "Produtos de Depósito Fixo definem as regras, configurações padrão e restrições para as ofertas de depósito fixo de uma instituição financeira (também chamados de depósitos a prazo). Um produto de depósito fixo fornece um modelo para múltiplas contas de depósito fixo para os clientes da instituição financeira.",
@@ -3392,6 +3547,7 @@
       "LoanAccountCustomSnapshotBusinessEvent": "LoanAccountCustomSnapshotBusinessEvent",
       "LoanAccountDelinquencyPauseChangedBusinessEvent": "LoanAccountDelinquencyPauseChangedBusinessEvent",
       "LoanAccountSnapshotBusinessEvent": "LoanAccountSnapshotBusinessEvent",
+      "Loan Account Details": "Detalhes da conta de empréstimo",
       "Loan Account Actions": "Ações de conta de empréstimo",
       "Loan Collateral Details": "Detalhes da garantia do empréstimo",
       "Loan Disbursal": "Desembolso de empréstimo",
@@ -3463,23 +3619,23 @@
       "No Data": "Sem dados",
       "Not Activated": "Não ativado",
       "No Description": "Sem descrição",
-      "No checker inbox data available for this account": "Não há dados da caixa de entrada do verificador disponíveis para esta conta.",
-      "No checker inbox data available for this search": "Não há dados da caixa de entrada do verificador disponíveis para esta pesquisa.",
+      "No checker inbox data available for this account": "Não há dados da caixa de entrada do verificador encontrados para esta conta.",
+      "No checker inbox data available for this search": "Não há dados da caixa de entrada do verificador encontrados para esta pesquisa.",
       "No client was found": "Nenhum cliente foi encontrado",
       "No data found": "Nenhum dado encontrado",
       "No permissions found": "Nenhuma permissão encontrada",
       "NonTriggered": "Não disparado",
       "No penalties found": "Nenhuma penalidade encontrada",
-      "NoDocuments": "Nenhum documento disponível.",
+      "NoDocuments": "Nenhum documento encontrado.",
       "NoFileSelected": "Nenhum arquivo selecionado",
-      "NoNotesAvailable": "Nenhuma nota disponível",
+      "NoNotesAvailable": "Nenhuma nota encontrada",
       "No Loan Product was found": "Nenhum produto de empréstimo foi encontrado.",
-      "No loan locked available": "Nenhum empréstimo bloqueado disponível.",
+      "No loan locked available": "Nenhum empréstimo bloqueado encontrado.",
       "No notifications": "Sem notificações",
-      "No pending loan available for disbursal": "Nenhum empréstimo pendente disponível para desembolso.",
+      "No pending loan available for disbursal": "Nenhum empréstimo pendente encontrado para desembolso.",
       "No pending loans for approval": "Não há empréstimos pendentes para aprovação.",
-      "No pending rescheduled loan available for this account": "Nenhum empréstimo reescalonado pendente disponível para esta conta.",
-      "No repayments and disbursal": "Nenhum reembolso e desembolso estão disponíveis para cliente e data de reunião selecionados",
+      "No pending rescheduled loan available for this account": "Nenhum empréstimo reescalonado pendente encontrado para esta conta.",
+      "No repayments and disbursal": "Nenhum reembolso e desembolso encontrado para o cliente e a data de reunião selecionados",
       "No report data was generated": "Nenhum dado de relatório foi gerado",
       "No transaction was found": "Nenhuma transação foi encontrada.",
       "Notes": "Notas",
@@ -3487,7 +3643,7 @@
       "Notification": "Notificação",
       "Notifications": "Notificações",
       "Organization": "Organização",
-      "Organization available languages": "A organização pode selecionar um idioma aqui a partir dos idiomas disponíveis aqui.",
+      "Organization available languages": "A organização pode selecionar um idioma aqui a partir dos idiomas encontrados aqui.",
       "Optional": "Opcional",
       "out": "fora",
       "Original Schedule": "Cronograma Original",
@@ -3517,6 +3673,7 @@
       "Provisioning criteria definitions": "Preencha todas as definições de critérios de provisionamento.",
       "Precedes of": "Precede de",
       "Recurring Deposit Account Charges": "Cobranças recorrentes da conta de depósito",
+      "Recurring Deposit Account Details": "Detalhes da conta de depósito recorrente",
       "Recurring Deposit Account Interest Rate Chart": "Gráfico de taxas de juros de contas de depósito recorrente",
       "Recurring Deposit Account Standing Instructions": "Instruções sobre a situação da conta de depósito recorrente",
       "Recurring Deposit Account Transactions": "Transações recorrentes em contas de depósito",
@@ -3582,6 +3739,7 @@
       "Share Products Dividends": "Compartilhe dividendos de produtos",
       "Share products define the rules, default settings": "Os produtos de ações definem as regras, configurações padrão e restrições para as ações e dividendos de uma instituição financeira. Um produto de ações fornece um modelo para várias contas que são ou serão mantidas pelos clientes da instituição financeira.",
       "Shares": "Ações",
+      "Shares Account Details": "Detalhes da conta de ações",
       "Shares Account Actions": "Compartilha ações da conta",
       "Shares Account Charges": "Encargos da conta de ações",
       "Shares Account Dividends": "Dividendos da conta de ações",
@@ -3749,7 +3907,9 @@
       "Failed to update payment type. Please try again.": "Falha ao atualizar o tipo de pagamento. Tente novamente.",
       "Search and assign this beneficiary to an existing Mifos client account": "Pesquise e atribua este beneficiário a uma conta de cliente Mifos existente",
       "Failed to search clients. Please try again.": "Falha ao pesquisar clientes. Tente novamente.",
-      "Process Remittance": "Processar remessa"
+      "Process Remittance": "Processar remessa",
+      "Loan Originators": "Agentes de Crédito",
+      "Loan Reschedules": "Reprogramações de empréstimos"
     },
     "permissions": {
       "actions": {
@@ -4032,20 +4192,22 @@
     },
     "messages": {
       "No Data Found": "Nenhum dado encontrado",
-      "No Upcoming Charges Available": "Nenhuma cobrança futura disponível",
-      "No Active Loan Accounts Available": "Nenhuma conta de empréstimo ativa disponível",
-      "No Closed Loan Accounts Available": "Nenhuma conta de empréstimo encerrada disponível",
-      "No Active Saving Accounts Available": "Nenhuma conta de poupança ativa disponível",
-      "No Closed Saving Accounts Available": "Nenhuma conta de poupança encerrada disponível",
-      "No Active Fixed Deposit Accounts Available": "Nenhuma conta de depósito fixo ativa disponível",
-      "No Closed Fixed Deposit Accounts Available": "Nenhuma conta de depósito fixo encerrada disponível",
-      "No Active Recurring Deposit Accounts Available": "Nenhuma conta de depósito recorrente ativa disponível",
-      "No Closed Recurring Deposit Accounts Available": "Nenhuma conta de depósito recorrente encerrada disponível",
-      "No Active Share Accounts Available": "Nenhuma conta de ações ativa disponível",
-      "No Closed Share Accounts Available": "Nenhuma conta de ações encerrada disponível",
-      "No Collateral Data Available": "Nenhum dado de garantia disponível",
-      "No Identities Available": "Nenhuma identidade disponível",
-      "validationSaved": "Dados de validação guardados com sucesso."
+      "No Upcoming Charges Found": "Nenhuma cobrança futura encontrada",
+      "No Active Loan Accounts Found": "Nenhuma conta de empréstimo ativa encontrada",
+      "No Closed Loan Accounts Found": "Nenhuma conta de empréstimo encerrada encontrada",
+      "No Active Saving Accounts Found": "Nenhuma conta poupança ativa encontrada",
+      "No Closed Saving Accounts Found": "Nenhuma conta poupança encerrada encontrada",
+      "No Active Fixed Deposit Accounts Found": "Nenhuma conta de depósito fixo ativa encontrada",
+      "No Closed Fixed Deposit Accounts Found": "Nenhuma conta de depósito fixo encerrada encontrada",
+      "No Active Recurring Deposit Accounts Found": "Nenhuma conta de depósito recorrente ativa encontrada",
+      "No Closed Recurring Deposit Accounts Found": "Nenhuma conta de depósito recorrente encerrada encontrada",
+      "No Active Share Accounts Found": "Nenhuma conta de ações ativa encontrada",
+      "No Closed Share Accounts Found": "Nenhuma conta de ações encerrada encontrada",
+      "No Collateral Data Found": "Nenhum dado de garantia encontrado",
+      "No Identities Found": "Nenhuma identidade encontrada",
+      "validationSaved": "Dados de validação guardados com sucesso.",
+      "workingCapitalDiscountUpdated": "O desconto do empréstimo de fundo de maneio foi atualizado com sucesso.",
+      "unableToUpdateDiscount": "Não foi possível atualizar o desconto."
     }
   },
   "languages": {
@@ -4154,7 +4316,7 @@
     "Leave this checkbox unchecked": "Deixe esta caixa de seleção desmarcada se o empréstimo for de desembolso único. Marque esta caixa de seleção se o empréstimo for um empréstimo com múltiplos desembolsos. Consulte os campos adicionais para obter informações adicionais necessárias para este tipo de empréstimo.",
     "Loan Account": "Conta de empréstimo",
     "Loan Product can be used to apply for Topup Loans": "Se selecionado, o Produto de Empréstimo pode ser usado para solicitar Empréstimos Recarga.",
-    "Loan products may be assigned": "Os produtos de empréstimo podem ser atribuídos a um fundo criado pela sua instituição financeira. Se disponível, o campo do fundo pode ser utilizado para acompanhar e reportar grupos de empréstimos.",
+    "Loan products may be assigned": "Os produtos de empréstimo podem ser atribuídos a um fundo criado pela sua instituição financeira. Se encontrada, o campo do fundo pode ser utilizado para acompanhar e reportar grupos de empréstimos.",
     "Make Repayment": "Faça o reembolso",
     "Maximum number of disbursements": "O número máximo de desembolsos permitidos para uma conta de empréstimo.",
     "Maximum outstanding loan account balance": "O saldo máximo da conta de empréstimo pendente permitido em um determinado momento.",
@@ -4258,7 +4420,7 @@
     "Withdraw": "Retirar",
     "Yes": "Sim",
     "loan product will be active and available to clients": "A data em que o produto de empréstimo estará ativo e disponível para os clientes. Se estiver em branco, o produto de empréstimo estará ativo assim que for criado.",
-    "loan product will become inactive and unavailable to clients": "A data em que o produto de empréstimo ficará inativo e indisponível para os clientes. Se estiver em branco, o produto de carregamento nunca ficará inativo.",
+    "loan product will become inactive and unavailable to clients": "A data em que o produto de empréstimo ficará inativo e indisponível para os clientes. Se estiver em branco, o produto de empréstimo nunca ficará inativo.",
     "Refund transactions where interest refund will automatically be calculated": "Transações de reembolso em que o reembolso de juros será calculado automaticamente",
     "Create Interest Refund": "Criar reembolso de juros",
     "ACTIVE": "ATIVO",
@@ -4384,5 +4546,59 @@
     "ZW": "Zimbabwe"
   },
   "Deactivate Role": "Desativar papel",
-  "Delete Role": "Excluir papel"
+  "Delete Role": "Excluir papel",
+  "clients": {
+    "actions": {
+      "close": {
+        "success": "Cliente encerrado com sucesso."
+      },
+      "reject": {
+        "success": "Cliente rejeitado com sucesso."
+      },
+      "withdraw": {
+        "success": "Cliente retirado com sucesso."
+      },
+      "reactivate": {
+        "success": "Cliente reativado com sucesso.",
+        "failure": "Falha ao reativar o cliente."
+      },
+      "activate": {
+        "success": "Cliente ativado com sucesso.",
+        "failure": "Falha ao ativar o cliente."
+      },
+      "acceptTransfer": {
+        "success": "Transferência de cliente aceite com sucesso."
+      },
+      "rejectTransfer": {
+        "success": "Transferência de cliente rejeitada com sucesso."
+      },
+      "undoTransfer": {
+        "success": "Transferência de cliente desfeita com sucesso."
+      },
+      "undoRejection": {
+        "success": "Rejeição de cliente desfeita com sucesso."
+      },
+      "transfer": {
+        "success": "Transferência de cliente proposta com sucesso.",
+        "failure": "Falha ao propor a transferência do cliente."
+      },
+      "addCharge": {
+        "success": "Encargo do cliente adicionado com sucesso."
+      },
+      "addCollateral": {
+        "success": "Garantia do cliente adicionada com sucesso."
+      },
+      "assignStaff": {
+        "success": "Pessoal atribuído ao cliente com sucesso.",
+        "failure": "Falha ao atribuir pessoal ao cliente."
+      },
+      "updateSavingsAccount": {
+        "success": "Conta de poupança do cliente atualizada com sucesso."
+      },
+      "takeSurvey": {
+        "success": "Questionário submetido com sucesso.",
+        "failure": "Falha ao submeter o questionário."
+      }
+    }
+  }
 }
